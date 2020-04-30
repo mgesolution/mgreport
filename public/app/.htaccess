@@ -1,0 +1,6 @@
+DirectoryIndex index.html
+RewriteEngine On
+RewriteBase '/mgreport'
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ mgreport/index.html?/$1 [L]
